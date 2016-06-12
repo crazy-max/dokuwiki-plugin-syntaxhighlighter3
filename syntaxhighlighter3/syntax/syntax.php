@@ -74,6 +74,8 @@ class syntax_plugin_syntaxhighlighter3_syntax extends DokuWiki_Syntax_Plugin {
         if (count($data) == 3) {
             list($syntax, $attr, $content) = $data;
             if ($syntax == 'sxh') {
+                $title = '';
+                $highlight = '';
                 // Check if there's a title in the $attr string. Block title can't be passed along as a normal parameter to SyntaxHighlighter.
                 if (preg_match("/title:/i", $attr)) {
                     // Extract title(s) from $attr string.
@@ -84,17 +86,47 @@ class syntax_plugin_syntaxhighlighter3_syntax extends DokuWiki_Syntax_Plugin {
                     $attr = implode(";",$not_title_array);
                     // If there are multiple titles, use the last one.
                     $title = array_pop($title_array);
-                    $title = preg_replace("/.*title:\s{0,}(.*)/i","$1",$title);
-                    // Make sure that SyntaxHighlighter brush alias and options are lowercase.
-                    $attr = strtolower($attr);
-                    // Add title as an attribute to the <pre /> tag and pass the rest of $attr to SyntaxHighlighter.
-                    $renderer->doc .= "<pre class=\"brush: ".$attr."\" title=\"".$title."\">".$renderer->_xmlEntities($content)."</pre>";
-                } else {
-                    // Make sure that SyntaxHighlighter brush alias and options are lowercase.
-                    $attr = strtolower($attr);
-                    // No title detected, pass all of $attr as parameter to SyntaxHighlighter.
-                    $renderer->doc .= "<pre class=\"brush: ".$attr."\">".$renderer->_xmlEntities($content)."</pre>";
+                    $title = ' title="' . preg_replace("/.*title:\s{0,}(.*)/i","$1", $title) . '"';
                 }
+                // Check highlight attr for lines ranges
+                if (preg_match("/highlight:/i", $attr, $matches)) {
+                    // Extract highlight from $attr string.
+                    $attr_array = explode(";",$attr);
+                    $highlight_array = preg_grep("/highlight:/i", $attr_array);
+                    // Extract everything BUT highlight from $attr string.
+                    $not_highlight_array = preg_grep("/highlight:/i", $attr_array, PREG_GREP_INVERT);
+                    $attr = implode(";",$not_highlight_array);
+                    // If there are multiple hightlights, use the last one.
+                    $highlight_str = array_pop($highlight_array);
+                    $highlight_str = preg_replace("/.*highlight:\s{0,}(.*)/i","$1", $highlight_str);
+                    // Remove [ ]
+                    $highlight_str = str_replace(array('[', ']'), '', $highlight_str);
+                    // Process ranges if exists
+                    $highlight_exp = explode(',', $highlight_str);
+                    if (count($highlight_exp) > 1) {
+                        foreach ($highlight_exp as $highlight_elt) {
+                            if (!empty($highlight)) {
+                                $highlight .= ',';
+                            }
+                            $highlight_elt = trim($highlight_elt);
+                            $highlight_elt_exp = explode('-', $highlight_elt);
+                            if (count($highlight_elt_exp) == 2) {
+                                foreach (range($highlight_elt_exp[0], $highlight_elt_exp[1]) as $key => $lineNumber) {
+                                    if ($key > 0) {
+                                        $highlight .= ',';
+                                    }
+                                    $highlight .= $lineNumber;
+                                }
+                            } else {
+                                $highlight .= $highlight_elt;
+                            }
+                        }
+                    } else {
+                        $highlight = trim($highlight_str);
+                    }
+                    $highlight = ' highlight: [' . $highlight . ']';
+                }
+                $renderer->doc .= '<pre class="brush: ' . strtolower($attr . $highlight) . '"' . $title . '>' . $renderer->_xmlEntities($content) . '</pre>';
             } else {
                 $renderer->file($content);
             }
