@@ -1,5 +1,10 @@
 # Changelog
 
+## 2016/06/13
+
+* Hide box shadow (Issue #1)
+* Add build bash script
+
 ## 2016/06/12
 
 * Allow ranges for highlight parameter

@@ -9,8 +9,8 @@ set filepath=%distpath%\%filename%.tar.gz
 set buildPath=%binpath%\%filename%
 
 :: create bin path and dist path
-if not exist "%binpath%" mkdir "%binpath%"
 rd /s /q "%binpath%" 2>NUL
+mkdir "%binpath%"
 if not exist "%distpath%" mkdir "%distpath%"
 
 :: copy plugin folder
