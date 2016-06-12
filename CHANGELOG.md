@@ -3,6 +3,7 @@
 ## 2016/06/12
 
 * Allow ranges for highlight parameter
+* Add screenshots
 * Add .editorconfig
 * Update README and several infos
 * Add build tools
