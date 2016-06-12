@@ -3,13 +3,15 @@ CHCP 1252>NUL
 SETLOCAL EnableDelayedExpansion
 
 set binpath=%~dp0bin
+set distpath=%~dp0dist
 set filename=syntaxhighlighter3
-set filepath=%~dp0dist\%filename%.tar.gz
+set filepath=%distpath%\%filename%.tar.gz
 set buildPath=%binpath%\%filename%
 
-:: create bin path
+:: create bin path and dist path
 if not exist "%binpath%" mkdir "%binpath%"
 rd /s /q "%binpath%" 2>NUL
+if not exist "%distpath%" mkdir "%distpath%"
 
 :: copy plugin folder
 xcopy /e /i /y "%~dp0syntaxhighlighter3" "%buildPath%"
@@ -21,7 +23,7 @@ copy /y "%~dp0README.md" "%buildPath%"
 
 :: create archive
 del /f /q "%filepath%" 2>NUL
-"%~dp0tools\7z.exe" a -ttar -so "%~dp0dist\%filename%" "%buildPath%" | "%~dp0\tools\7z.exe" a -si "%filepath%"
+"%~dp0tools\7z.exe" a -ttar -so "%distpath%\%filename%" "%buildPath%" | "%~dp0\tools\7z.exe" a -si "%filepath%"
 
 PAUSE
 ENDLOCAL
