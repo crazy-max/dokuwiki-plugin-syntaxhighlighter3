@@ -103,26 +103,22 @@ class syntax_plugin_syntaxhighlighter3_syntax extends DokuWiki_Syntax_Plugin {
                     $highlight_str = str_replace(array('[', ']'), '', $highlight_str);
                     // Process ranges if exists
                     $highlight_exp = explode(',', $highlight_str);
-                    if (count($highlight_exp) > 1) {
-                        foreach ($highlight_exp as $highlight_elt) {
-                            if (!empty($highlight)) {
-                                $highlight .= ',';
-                            }
-                            $highlight_elt = trim($highlight_elt);
-                            $highlight_elt_exp = explode('-', $highlight_elt);
-                            if (count($highlight_elt_exp) == 2) {
-                                foreach (range($highlight_elt_exp[0], $highlight_elt_exp[1]) as $key => $lineNumber) {
-                                    if ($key > 0) {
-                                        $highlight .= ',';
-                                    }
-                                    $highlight .= $lineNumber;
-                                }
-                            } else {
-                                $highlight .= $highlight_elt;
-                            }
+                    foreach ($highlight_exp as $highlight_elt) {
+                        if (!empty($highlight)) {
+                            $highlight .= ',';
                         }
-                    } else {
-                        $highlight = trim($highlight_str);
+                        $highlight_elt = trim($highlight_elt);
+                        $highlight_elt_exp = explode('-', $highlight_elt);
+                        if (count($highlight_elt_exp) == 2) {
+                            foreach (range($highlight_elt_exp[0], $highlight_elt_exp[1]) as $key => $lineNumber) {
+                                if ($key > 0) {
+                                    $highlight .= ',';
+                                }
+                                $highlight .= $lineNumber;
+                            }
+                        } else {
+                            $highlight .= $highlight_elt;
+                        }
                     }
                     $highlight = ' highlight: [' . $highlight . ']';
                 }
