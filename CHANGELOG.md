@@ -4,6 +4,7 @@
 
 * Hide box shadow (Issue #1)
 * Add build bash script
+* Add archives releases
 
 ## 2016/06/12
 
