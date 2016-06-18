@@ -1,7 +1,7 @@
 base   syntaxhighlighter3
 author Cr@zy (fork of Daniel Lindgren's syntaxhighlighter3 plugin).
 email  webmaster@crazyws.fr
-date   2016-06-13
+date   2016-06-18
 name   syntaxhighlighter3 plugin
 desc   Alternative to GeSHi server-side code highlighting with client-side SyntaxHighlighter 3.0.83 by Alex Gorbatchev. SyntaxHighlighter can be found at http://alexgorbatchev.com/wiki/SyntaxHighlighter.
 url    http://www.dokuwiki.org/plugin:syntaxhighlighter3
