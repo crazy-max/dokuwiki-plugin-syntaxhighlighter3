@@ -1,5 +1,25 @@
 # SyntaxHighlighter3 DokuWiki Plugin [![Download](https://img.shields.io/badge/download-20160618-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160618/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [About](#about)
+- [Download and Installation](#download-and-installation)
+- [Syntax and Usage](#syntax-and-usage)
+- [Usage](#usage)
+  - [Brush alias](#brush-alias)
+  - [Options](#options)
+  - [Defaults](#defaults)
+- [Example](#example)
+- [Features](#features)
+- [Copy to clipboard](#copy-to-clipboard)
+- [Highlight a range of lines](#highlight-a-range-of-lines)
+- [Issues and Features](#issues-and-features)
+- [Changelog](#changelog)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## About
 
 This plugin is an alternative to GeSHi server-side code highlighting of DokuWiki with client-side [SyntaxHighlighter](http://alexgorbatchev.com/wiki/SyntaxHighlighter) by Alex Gorbatchev with copy to clipboard functionality based on [SyntaxHighlighter Plugin by David Shin](https://www.dokuwiki.org/plugin:syntaxhighlighter2). The subfolder `sxh3` contains a complete (and untouched) distribution of SyntaxHighlighter 3.0.83.<br />
