@@ -81,6 +81,20 @@ class action_plugin_syntaxhighlighter3_action extends DokuWiki_Action_Plugin {
         $brush_alias = strtolower(implode(' ', $brush_split));
         ptln("    '".$brush_alias." ".DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/".$brush_script."'");
         ptln("  );");
+        ptln("  SyntaxHighlighter.defaults['auto-links'] = " . ($this->getConf('auto-links') == 1 ? 'true' : 'false') . ";");
+        ptln("  SyntaxHighlighter.defaults['collapse'] = " . ($this->getConf('collapse') == 1 ? 'true' : 'false') . ";");
+        $firstLine = $this->getConf('first-line');
+        if ($firstLine > 0) {
+            ptln("  SyntaxHighlighter.defaults['first-line'] = " . $this->getConf('first-line') . ";");
+        }
+        ptln("  SyntaxHighlighter.defaults['gutter'] = " . ($this->getConf('gutter') == 1 ? 'true' : 'false') . ";");
+        ptln("  SyntaxHighlighter.defaults['html-script'] = " . ($this->getConf('html-script') == 1 ? 'true' : 'false') . ";");
+        ptln("  SyntaxHighlighter.defaults['smart-tabs'] = " . ($this->getConf('smart-tabs') == 1 ? 'true' : 'false') . ";");
+        $tabSize = $this->getConf('tab-size');
+        if ($tabSize > 0) {
+            ptln("  SyntaxHighlighter.defaults['tab-size'] = " . $this->getConf('tab-size') . ";");
+        }
+        ptln("  SyntaxHighlighter.defaults['toolbar'] = " . ($this->getConf('toolbar') == 1 ? 'true' : 'false') . ";");
         ptln("  SyntaxHighlighter.all();");
         ptln("</script>");
     }

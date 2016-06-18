@@ -1,5 +1,10 @@
 # Changelog
 
+## 2016/06/18
+
+* Defaults configuration can be overrided in the Config Manager (Issue #11)
+* Add documentation from plugin page
+
 ## 2016/06/13
 
 * Hide box shadow (Issue #1)
