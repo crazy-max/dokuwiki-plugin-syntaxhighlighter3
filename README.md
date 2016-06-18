@@ -6,14 +6,13 @@
 - [About](#about)
 - [Download and Installation](#download-and-installation)
 - [Syntax and Usage](#syntax-and-usage)
-- [Usage](#usage)
   - [Brush alias](#brush-alias)
   - [Options](#options)
   - [Defaults](#defaults)
 - [Example](#example)
 - [Features](#features)
-- [Copy to clipboard](#copy-to-clipboard)
-- [Highlight a range of lines](#highlight-a-range-of-lines)
+  - [Copy to clipboard](#copy-to-clipboard)
+  - [Highlight a range of lines](#highlight-a-range-of-lines)
 - [Issues and Features](#issues-and-features)
 - [Changelog](#changelog)
 - [License](#license)
@@ -37,27 +36,26 @@ If you install this plugin manually, make sure it is installed in `lib/plugins/s
 * Does not use `<code>` tags, enables parallell use with DokuWikis own server side syntax highlighter (GeSHi).
 * Does not require Flash for copy to clipboard functionality.
 
-### Usage
-
+Usage:
 ```
 <sxh [brush alias][; options for SyntaxHighlighter]>
 ... code/text ...
 </sxh>
 ```
 
-#### Brush alias
+### Brush alias
 
 The brush alias (language) that SyntaxHighlighter should use. Defaults to "text" if none is provided. See [SyntaxHighlighter Brushes](http://alexgorbatchev.com/SyntaxHighlighter/manual/brushes/) for a complete list of available brushes.<br />
 Add new brushes to the scripts directory and the alias(es) and brush file name to the available brushes string in [Config Manager](https://www.dokuwiki.org/plugin:config) (example: "...,bat cmd shBrushBat.js"). The brush file name is case sensitive.
 
-#### Options
+### Options
 
 Semicolon separated options for SyntaxHighlighter, see [SyntaxHighlighter Configuration](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/).<br />
 [Block Title](http://alexgorbatchev.com/SyntaxHighlighter/whatsnew.html#blocktitle) isn't a normal configuration option, but the plugin handles it as if it was, i.e. `title: <title string>;`.
 
 > Do not collapse code and hide the toolbar at the same time, title will not show.
 
-#### Defaults
+### Defaults
 
 Some [Syntaxhighlighter defaults](http://alexgorbatchev.com/SyntaxHighlighter/manual/configuration/#syntaxhighlighterdefaults) can be overrided via the [Config Manager](https://www.dokuwiki.org/plugin:config) :
 * **auto-links**: Allows you to turn detection of links in the highlighted element on and off. If the option is turned off, URLs won’t be clickable `(default on)`
