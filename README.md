@@ -1,4 +1,4 @@
-# SyntaxHighlighter3 Plugin [![Download](https://img.shields.io/badge/download-20160618-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160618/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
+# SyntaxHighlighter3 DokuWiki Plugin [![Download](https://img.shields.io/badge/download-20160618-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160618/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
 
 ## About
 
