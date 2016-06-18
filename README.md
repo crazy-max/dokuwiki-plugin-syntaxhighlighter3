@@ -21,7 +21,9 @@
 
 ## About
 
-This plugin is an alternative to GeSHi server-side code highlighting of DokuWiki with client-side [SyntaxHighlighter](http://alexgorbatchev.com/wiki/SyntaxHighlighter) by Alex Gorbatchev with copy to clipboard functionality based on [SyntaxHighlighter Plugin by David Shin](https://www.dokuwiki.org/plugin:syntaxhighlighter2). The subfolder `sxh3` contains a complete (and untouched) distribution of SyntaxHighlighter 3.0.83.<br />
+This plugin is an alternative to GeSHi server-side code highlighting of DokuWiki with client-side [SyntaxHighlighter](http://alexgorbatchev.com/wiki/SyntaxHighlighter) by Alex Gorbatchev with copy to clipboard functionality based on [SyntaxHighlighter DokuWiki Plugin by David Shin](https://www.dokuwiki.org/plugin:syntaxhighlighter2).<br />
+
+The subfolder `sxh3` contains an untouched build of [SyntaxHighlighter 3.0.90](https://github.com/syntaxhighlighter/syntaxhighlighter/releases/tag/v3.0.90).<br />
 
 For compatibility and conflicts with others plugins, please refer to the official [DokuWiki SyntaxHighlighter3 plugin page](http://www.dokuwiki.org/plugin:syntaxhighlighter3). 
 

@@ -1,5 +1,10 @@
 # Changelog
 
+## 2016/06/19
+
+* Update to Syntaxhighlighter 3.0.90
+* New brushes: Haxe, TAP, TypeScript
+
 ## 2016/06/18
 
 * Defaults configuration can be overrided in the Config Manager (Issue #11)

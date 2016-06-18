@@ -26,25 +26,25 @@ class action_plugin_syntaxhighlighter3_action extends DokuWiki_Action_Plugin {
         // Add SyntaxHighlighter stylesheets. At least two, shCore.css and a theme.
         $event->data['link'][] = array( 'rel'   => 'stylesheet',
             'type'  => 'text/css',
-            'href'  => DOKU_BASE.'lib/plugins/syntaxhighlighter3/sxh3/styles/shCore.css',
+            'href'  => DOKU_BASE.'lib/plugins/syntaxhighlighter3/sxh3/pkg/styles/shCore.css',
             );
         $event->data['link'][] = array( 'rel'   => 'stylesheet',
             'type'  => 'text/css',
-            'href'  => DOKU_BASE.'lib/plugins/syntaxhighlighter3/sxh3/styles/'.$this->getConf('theme'),
+            'href'  => DOKU_BASE.'lib/plugins/syntaxhighlighter3/sxh3/pkg/styles/'.$this->getConf('theme'),
             );
 
         // Register core brush and autoloader.
         $event->data["script"][] = array ("type"   => "text/javascript",
-            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/shCore.js",
+            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/pkg/scripts/shCore.min.js",
             "_data" => ""
             );
         $event->data["script"][] = array ("type"   => "text/javascript",
-            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/shAutoloader.js",
+            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/pkg/scripts/shAutoloader.js",
             "_data" => ""
             );
         // Always load XML brush, needed for the option html-script.
         $event->data["script"][] = array ("type"   => "text/javascript",
-            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/shBrushXml.js",
+            "src"   => DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/pkg/scripts/shBrushXml.js",
             "_data" => ""
             );
 
@@ -72,14 +72,14 @@ class action_plugin_syntaxhighlighter3_action extends DokuWiki_Action_Plugin {
             $brush_split = explode(' ', $brush);
             $brush_script = array_pop($brush_split);
             $brush_alias = strtolower(implode(' ', $brush_split));
-            ptln("    '".$brush_alias." ".DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/".$brush_script."',");
+            ptln("    '".$brush_alias." ".DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/pkg/scripts/".$brush_script."',");
         }
 
         // Last brush, no comma at the end of the line.
         $brush_split = explode(' ', $lastbrush);
         $brush_script = array_pop($brush_split);
         $brush_alias = strtolower(implode(' ', $brush_split));
-        ptln("    '".$brush_alias." ".DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/scripts/".$brush_script."'");
+        ptln("    '".$brush_alias." ".DOKU_BASE."lib/plugins/syntaxhighlighter3/sxh3/pkg/scripts/".$brush_script."'");
         ptln("  );");
         ptln("  SyntaxHighlighter.defaults['auto-links'] = " . ($this->getConf('auto-links') == 1 ? 'true' : 'false') . ";");
         ptln("  SyntaxHighlighter.defaults['collapse'] = " . ($this->getConf('collapse') == 1 ? 'true' : 'false') . ";");
