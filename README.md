@@ -1,4 +1,4 @@
-# SyntaxHighlighter3 DokuWiki Plugin [![Download](https://img.shields.io/badge/download-20160618-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160618/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
+# SyntaxHighlighter3 DokuWiki Plugin [![Download](https://img.shields.io/badge/download-20160619-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160619/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
