@@ -1,4 +1,12 @@
-# SyntaxHighlighter3 DokuWiki Plugin [![Download](https://img.shields.io/badge/download-20160619-brightgreen.svg)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases/download/20160619/syntaxhighlighter3.tar.gz) [![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg)](https://www.paypal.me/crazyws)
+:boom: **[SyntaxHighlighter 4 Plugin](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter4) is now available!** :boom:
+
+[![GitHub release](https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases)
+[![Minimum DokuWiki Version](https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square)](https://www.dokuwiki.org/releasenames)
+[![Code Quality](https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square)](https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3)
+[![StyleCI](https://styleci.io/repos/60978685/shield?style=flat-square)](https://styleci.io/repos/60978685)
+[![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://www.paypal.me/crazyws)
+
+# SyntaxHighlighter3 DokuWiki Plugin 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->

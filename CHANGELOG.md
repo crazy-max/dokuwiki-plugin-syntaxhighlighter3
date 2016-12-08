@@ -1,5 +1,10 @@
 # Changelog
 
+## 2016/12/08
+
+* Add ANT build tools
+* Add StyleCI and Codacy
+
 ## 2016/06/19
 
 * Update to Syntaxhighlighter 3.0.90
