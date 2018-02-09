@@ -1,31 +1,13 @@
 :boom: **[SyntaxHighlighter 4 Plugin](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter4) is now available!** :boom:
 
-[![GitHub release](https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square)](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases)
-[![Minimum DokuWiki Version](https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square)](https://www.dokuwiki.org/releasenames)
-[![Code Quality](https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square)](https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3)
-[![StyleCI](https://styleci.io/repos/60978685/shield?style=flat-square)](https://styleci.io/repos/60978685)
-[![Donate Paypal](https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square)](https://www.paypal.me/crazyws)
-
-# SyntaxHighlighter3 DokuWiki Plugin 
-
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [About](#about)
-- [Download and Installation](#download-and-installation)
-- [Syntax and Usage](#syntax-and-usage)
-  - [Brush alias](#brush-alias)
-  - [Options](#options)
-  - [Defaults](#defaults)
-- [Example](#example)
-- [Features](#features)
-  - [Copy to clipboard](#copy-to-clipboard)
-  - [Highlight a range of lines](#highlight-a-range-of-lines)
-- [Issues and Features](#issues-and-features)
-- [Changelog](#changelog)
-- [License](#license)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+<p align="center">
+  <a href="https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases"><img src="https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square" alt="Github Release"></a>
+  <a href="https://www.dokuwiki.org/releasenames"><img src="https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square" alt="Minimum DokuWiki Version"></a>
+  <a href="https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3"><img src="https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square" alt="Code Quality"></a>
+  <a href="https://styleci.io/repos/61027126"><img src="https://styleci.io/repos/61027126/shield?style=flat-square" alt="StyleCI"></a>
+  <a href="https://beerpay.io/crazy-max/dokuwiki-plugin-syntaxhighlighter4"><img src="https://img.shields.io/beerpay/crazy-max/dokuwiki-plugin-syntaxhighlighter4.svg?style=flat-square" alt="Beerpay"></a>
+  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMMSKWE5DPNFU"><img src="https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square" alt="Donate Paypal"></a>
+</p>
 
 ## About
 
@@ -117,7 +99,7 @@ Some [Syntaxhighlighter defaults](http://alexgorbatchev.com/SyntaxHighlighter/ma
 
 Expected result:
 
-![](https://raw.githubusercontent.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/master/screenshots/expected.png)
+![](.res/expected.png)
 
 ## Features
 
@@ -171,7 +153,7 @@ if (preg_match("/highlight:/i", $attr, $matches)) {
 
 Expected result:
 
-![](https://raw.githubusercontent.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/master/screenshots/highlight-range.png)
+![](.res/highlight-range.png)
 
 ## Issues and Features
 
@@ -180,6 +162,15 @@ Expected result:
 ## Changelog
 
 See `CHANGELOG.md`.
+
+## How can i help ?
+
+All kinds of contributions are welcomed :raised_hands:!<br />
+The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:<br />
+But we're not gonna lie to each other, I'd rather you buy me a beer or two :beers:!
+
+[![Beerpay](https://beerpay.io/crazy-max/dokuwiki-plugin-syntaxhighlighter4/badge.svg?style=beer-square)](https://beerpay.io/crazy-max/dokuwiki-plugin-syntaxhighlighter4)
+or [![Paypal](.res/paypal.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMMSKWE5DPNFU)
 
 ## License
 

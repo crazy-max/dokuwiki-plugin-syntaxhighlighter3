@@ -1,5 +1,11 @@
 # Changelog
 
+## 2018/02/09
+
+> This is the latest release. The has been moved to [SyntaxHighlighter 4](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter4)
+
+* Update author's name
+
 ## 2016/12/08
 
 * Add ANT build tools
