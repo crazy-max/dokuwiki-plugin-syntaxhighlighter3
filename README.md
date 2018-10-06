@@ -4,7 +4,6 @@
   <a href="https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases"><img src="https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square" alt="Github Release"></a>
   <a href="https://www.dokuwiki.org/releasenames"><img src="https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square" alt="Minimum DokuWiki Version"></a>
   <a href="https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3"><img src="https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square" alt="Code Quality"></a>
-  <a href="https://styleci.io/repos/61027126"><img src="https://styleci.io/repos/61027126/shield?style=flat-square" alt="StyleCI"></a>
   <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMMSKWE5DPNFU"><img src="https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square" alt="Donate Paypal"></a>
 </p>
 
