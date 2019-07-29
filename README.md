@@ -4,7 +4,8 @@
   <a href="https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases"><img src="https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square" alt="Github Release"></a>
   <a href="https://www.dokuwiki.org/releasenames"><img src="https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square" alt="Minimum DokuWiki Version"></a>
   <a href="https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3"><img src="https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square" alt="Code Quality"></a>
-  <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMMSKWE5DPNFU"><img src="https://img.shields.io/badge/donate-paypal-blue.svg?style=flat-square" alt="Donate Paypal"></a>
+  <br /><a href="https://www.patreon.com/crazymax"><img src="https://img.shields.io/badge/donate-patreon-fb664e.svg?style=flat-square" alt="Support me on Patreon"></a>
+  <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-7057ff.svg?style=flat-square" alt="Donate Paypal"></a>
 </p>
 
 ## About
@@ -161,13 +162,14 @@ Expected result:
 
 See `CHANGELOG.md`.
 
-## How can i help ?
+## How can I help ?
 
-All kinds of contributions are welcomed :raised_hands:!<br />
+All kinds of contributions are welcome :raised_hands:!<br />
 The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:<br />
 But we're not gonna lie to each other, I'd rather you buy me a beer or two :beers:!
 
-[![Paypal](.res/paypal-donate.png)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=NMMSKWE5DPNFU)
+[![Support me on Patreon](.res/patreon.png)](https://www.patreon.com/crazymax) 
+[![Paypal Donate](.res/paypal-donate.png)](https://www.paypal.me/crazyws)
 
 ## License
 
