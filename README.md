@@ -1,12 +1,16 @@
-:boom: **[SyntaxHighlighter 4 Plugin](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter4) is now available!** :boom:
-
 <p align="center">
   <a href="https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter3/releases"><img src="https://img.shields.io/github/release/crazy-max/dokuwiki-plugin-syntaxhighlighter3.svg?style=flat-square" alt="Github Release"></a>
   <a href="https://www.dokuwiki.org/releasenames"><img src="https://img.shields.io/badge/dokuwiki-%3E%3D%20Ponder%20Stibbons-yellow.svg?style=flat-square" alt="Minimum DokuWiki Version"></a>
   <a href="https://www.codacy.com/app/crazy-max/dokuwiki-plugin-syntaxhighlighter3"><img src="https://img.shields.io/codacy/grade/9901ac6898434b05a75b5d9bfcd81029.svg?style=flat-square" alt="Code Quality"></a>
-  <br /><a href="https://www.patreon.com/crazymax"><img src="https://img.shields.io/badge/donate-patreon-f96854.svg?logo=patreon&style=flat-square" alt="Support me on Patreon"></a>
+  <br /><a href="https://github.com/sponsors/crazy-max"><img src="https://img.shields.io/badge/sponsor-crazy--max-181717.svg?logo=github&style=flat-square" alt="Become a sponsor"></a>
   <a href="https://www.paypal.me/crazyws"><img src="https://img.shields.io/badge/donate-paypal-00457c.svg?logo=paypal&style=flat-square" alt="Donate Paypal"></a>
 </p>
+
+## :warning: Abandoned project
+
+This project is not maintained anymore and is abandoned. Feel free to fork and make your own changes if needed.
+
+You should consider switching to [**SyntaxHighlighter 4 Plugin**](https://github.com/crazy-max/dokuwiki-plugin-syntaxhighlighter4).
 
 ## About
 
@@ -164,12 +168,9 @@ See `CHANGELOG.md`.
 
 ## How can I help ?
 
-All kinds of contributions are welcome :raised_hands:!<br />
-The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon:<br />
-But we're not gonna lie to each other, I'd rather you buy me a beer or two :beers:!
+All kinds of contributions are welcome :raised_hands:! The most basic way to show your support is to star :star2: the project, or to raise issues :speech_balloon: You can also support this project by [**becoming a sponsor on GitHub**](https://github.com/sponsors/crazy-max) :clap: or by making a [Paypal donation](https://www.paypal.me/crazyws) to ensure this journey continues indefinitely! :rocket:
 
-[![Support me on Patreon](.res/patreon.png)](https://www.patreon.com/crazymax) 
-[![Paypal Donate](.res/paypal.png)](https://www.paypal.me/crazyws)
+Thanks again for your support, it is much appreciated! :pray:
 
 ## License
 
